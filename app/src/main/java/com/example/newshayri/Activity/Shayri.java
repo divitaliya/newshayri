@@ -21,6 +21,7 @@ import com.example.newshayri.config;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Random;
+import java.util.stream.Stream;
 
 public class Shayri extends AppCompatActivity {
 //    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
@@ -44,6 +45,7 @@ public class Shayri extends AppCompatActivity {
         title = findViewById(R.id.title);
         relode = findViewById(R.id.reload);
         expand = findViewById(R.id.expand);
+        String[] khush ;
 
         shayripos = getIntent().getIntExtra("pos",0);
         arr = getIntent().getStringArrayExtra("categorypos");
